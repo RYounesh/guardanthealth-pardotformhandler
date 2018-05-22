@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="font/style.css">
+    <link rel="stylesheet" type="text/css" href="css/gotham-rounded.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
@@ -22,19 +22,19 @@
 
 </head>
 <body>
-
+</div>
     <div class="container-fluid">
         <header>
             <div class="row text-center">
                 <h3>The Limitations Of Tissue</h3>
             </div>
-            <div class="col-md-8 col-md-offset-2 text-center">
+            <div class="header-body text-center">
                 <p class="header-content">A physician panel of Oncologists discuss their own experiences with the limitations of tissue and how an extensively validated liquid biopsy helps guide treatment selection.</p>
             </div>
 
         </header>
     </div>
-
+<div class="main-container">
     <div class="container head-img" id="video-section">
         <video autoplay muted loop id="video-container" autoplay>
             <source src="https://go.pardot.com/l/360001/2018-05-15/3rxh9/360001/24402/455515626__2_.mp4" type="video/mp4">
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-10 col-md-offset-1">
+                        <div class="cancer-type-container">
                             <div class="col-md-12" id="cancer-type">
                                 <h4 class="text-center btn-header">What types of cancer patients do you primarily treat?</h4>
                             </div>
@@ -177,17 +177,17 @@
                                 <input type="text" placeholder="Address" class="form-control input-type " name="pcAddress" required="true">
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <input type="text" placeholder="city" class="form-control input-type " name="pcCity" required="true">
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <input type="text" placeholder="state" class="form-control input-type " name="pcState" required>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <input type="text" placeholder="zip code" class="form-control input-type " name="pcZip" required>
                             </div>
@@ -241,7 +241,7 @@
         </div>
 
         <div class="row" id="shift">
-            <div class="col-md-4 col-md-offset-4">
+            <div class="step-container">
                 <div class="stepwizard">
                     <div class="stepwizard-row">
                         <div class="stepwizard-step pull-left">
@@ -282,12 +282,13 @@
         <div class="container">
             <div class="row">
                 <div class="second-footer text-center">
-                    <div>CLICK HERE TO LEARN MORE ABOUT </div>
+                    <div class="click-more">CLICK HERE TO LEARN MORE ABOUT </div>
                     <img src="https://go.pardot.com/l/360001/2018-05-04/3r4dh/360001/23658/logo_1x.svg" class="text-center">
                 </div>
             </div>
         </div>
     </a>
+    </div>
     <div class="container-fluid">
         <div class="row">
             <footer>
@@ -296,4 +297,16 @@
         </div>
     </div>
 </body>
+<style>
+    body{
+        display:none;
+    }
+    </style>
+<script>
+  $(function() {
+    
+        $("body").fadeIn(1000);        
+      
+});
+ </script>
 </html>
