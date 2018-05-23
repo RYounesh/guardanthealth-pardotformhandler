@@ -248,6 +248,10 @@ footer p {
 .second-footer {
     margin-top: 41px 
 }
+#video-section{
+    position: relative; 
+    z-index: 0 
+}
 #video-container {
     position: relative;
     right: 0;
@@ -257,15 +261,16 @@ footer p {
     z-index: -1 
 }
 .vid-controller {
-    font-size: 48px;
+    font-size: 35px;
     width: 50px;
     right: 0;
     top: 50%;
     left: 0;
-    color: #ca1515;
+    color: rgba(255, 255, 255, 0.59);
     display: none;
     position: absolute;
-    margin: auto 
+    margin: auto;
+    z-index: 11;
 }
 .custom-label input {
     opacity: 0;
@@ -279,6 +284,7 @@ footer p {
     background-color: #ffffff;
     position: relative;
     z-index: 99;
+    margin-top: -1px;
 }
 .form-control {
     border-radius: 0 
@@ -361,7 +367,8 @@ label {
 }
 .success-content-body {
     font-size: 20px;
-    color: #353535 
+    color: #353535;
+    line-height: 33px;
 }
 .portal-app a {
     margin: 10px 
@@ -369,10 +376,10 @@ label {
 .bold {
     margin-top: 15px;
     margin-bottom: 60px;
-    color: #353535 
+    color: #353535;
+    font-family: 'Gotham Rounded Book';
 }
-.btn-next {
-    width: 144px;
+.btn-next { 
     margin: 0 auto auto;
     position: relative;
     z-index: 10 

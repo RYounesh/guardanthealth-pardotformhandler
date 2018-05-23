@@ -19,7 +19,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-
+ 
 </head>
 <body>
 </div>
@@ -34,13 +34,18 @@
 
         </header>
     </div>
-<div class="main-container">
-    <div class="container head-img" id="video-section">
-        <video autoplay muted loop id="video-container" autoplay>
+    
+    <div class="container head-img" id="video-section" style="background:#000">
+    <div class="main-container">
+    <video autoplay muted loop id="video-container" autoplay>
             <source src="https://go.pardot.com/l/360001/2018-05-15/3rxh9/360001/24402/455515626__2_.mp4" type="video/mp4">
         </video>
-        <i class="fa fa-pause-circle-o vid-controller"></i>
+       <i class="fa fa-pause vid-controller"></i> 
     </div>
+</div>
+    
+<div class="main-container">
+ 
     <div class="container custom-container">
 
         <div class="row">
@@ -71,7 +76,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" placeholder="npi number" class="form-control input-type " name="NPINumber" required>
+                                        <input type="text" placeholder="npi number" class="form-control input-type " id="npi" name="NPINumber" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -234,7 +239,7 @@
                 <div class="col-md-8 col-md-offset-2">
                     <p class="success-content-body">
                         <span class="bold">Thank you for requesting a Guardant360 Kit.</span>
-                        <br> A Genomic Specialist will contact you for a consultation.</p>
+                          <br> A Genomic Specialist will contact you for a consultation.</p>
                 </div>
             </div>
 
@@ -259,9 +264,7 @@
                     </div>
                     <hr/>
 
-                    <div class="btn-next">
-                        <button type="button" id="next" class="btn-primary btn-submit form-control validate">NEXT</button>
-                    </div>
+                   
                 </div>
             </div>
 
@@ -270,9 +273,19 @@
             <label for="pardot_extra_field">Comments</label>
             <input type="text" id="pardot_extra_field" name="pardot_extra_field">
         </div>
-        <div class="row form-two">
+         
+        <div class="row">
             <div class="col-md-8 col-md-offset-2 submit">
+                <div class="form-two">                
                 <button type="button" id="SubmitButton" class="btn-primary btn-submit form-control">SUBMIT</button>
+               </div>
+               <div class="form-one">
+               <div class="btn-next">
+                        <button type="button" id="next" class="btn-primary btn-submit form-control validate">NEXT</button>
+                    </div>
+                </div>
+
+
             </div>
         </div>
         </form>
