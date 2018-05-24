@@ -1,6 +1,3 @@
-<php
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,10 +16,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
- 
+    <style>
+        body {
+            display: none;
+        }
+    </style>
 </head>
+
 <body>
-</div>
     <div class="container-fluid">
         <header>
             <div class="row text-center">
@@ -34,273 +35,270 @@
 
         </header>
     </div>
-    
+
     <div class="container head-img" id="video-section" style="background:#000">
+        <div class="main-container">
+
+            <div id="youtube-vid"></div>
+
+        </div>
+    </div>
+
     <div class="main-container">
-    <video autoplay muted loop id="video-container" autoplay>
-            <source src="https://go.pardot.com/l/360001/2018-05-15/3rxh9/360001/24402/455515626__2_.mp4" type="video/mp4">
-        </video>
-       <i class="fa fa-pause vid-controller"></i> 
-    </div>
-</div>
-    
-<div class="main-container">
- 
-    <div class="container custom-container">
 
-        <div class="row">
-            <div class="col-md-12 form-head text-center">
-                <h4>Request a Guardant360 Kit</h4>
-            </div>
-            <div class="arrow-down"></div>
-        </div>
-        <div class="wrapper">
-            <form class="form">
-                <div class="form-one" id="form-one">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
+        <div class="container custom-container">
 
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="First Name" class="form-control input-type " name="FirstName" required>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Last Name" class="form-control input-type " name="LastName" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="npi number" class="form-control input-type " id="npi" name="NPINumber" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Email for results delivery" class="form-control input-type " name="Email" id="sEmail">
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="cancer-type-container">
-                            <div class="col-md-12" id="cancer-type">
-                                <h4 class="text-center btn-header">What types of cancer patients do you primarily treat?</h4>
-                            </div>
-
-                            <div class="row custom-button">
-                                <div class="col-md-4">
-                                    <label class="btn-default form-control custom-label" for="360001_37368pi_360001_37368_507044_507044">
-                                        <input type="radio" name="typeOfCancer" id="360001_37368pi_360001_37368_507044_507044" value="Lung Cancer" onchange="">
-                                        <span class="info-text">Lung Cancer </span>
-                                    </label>
-                                </div>
-                                <div class="col-md-4">
-                                    <label class="btn-default form-control custom-label" for="360001_37368pi_360001_37368_507046_507046">
-                                        <input type="radio" name="typeOfCancer" id="360001_37368pi_360001_37368_507046_507046" value="BREAST CANCER" onchange="">
-                                        <span class="info-text">BREAST CANCER</span>
-                                    </label>
-
-                                </div>
-                                <div class="col-md-4">
-                                    <label class="btn-default form-control custom-label" for="360001_37368pi_360001_37368_507048_507048">
-                                        <input type="radio" name="typeOfCancer" id="360001_37368pi_360001_37368_507048_507048" value="COLORECTAL CANCER" onchange="">
-                                        <span class="info-text">COLORECTAL CANCER</span>
-                                    </label>
-
-                                </div>
-                            </div>
-                            <div class="row custom-button">
-                                <div class="col-md-4">
-                                    <label class="btn-default form-control custom-label" for="360001_37368pi_360001_37368_507050_507050">
-                                        <input type="radio" name="typeOfCancer" id="360001_37368pi_360001_37368_507050_507050" value="GI/GU CANCER" onchange="">
-                                        <span class="info-text">GI/GU CANCER</span>
-                                    </label>
-
-                                </div>
-                                <div class="col-md-4">
-                                    <label class="btn-default form-control custom-label" for="360001_37368pi_360001_37368_507052_507052">
-                                        <input type="radio" name="typeOfCancer" id="360001_37368pi_360001_37368_507052_507052" value="MELANOMA CANCER" onchange="">
-                                        <span class="info-text">MELANOMA CANCER</span>
-                                    </label>
-
-                                </div>
-                                <div class="col-md-4">
-                                    <label class="btn-default form-control custom-label" for="360001_37368pi_360001_37368_507054_507054">
-                                        <input type="radio" name="typeOfCancer" id="360001_37368pi_360001_37368_507054_507054" value="OTHER CANCER" onchange="">
-                                        <span class="info-text">OTHER CANCER</span>
-                                    </label>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-        </div>
-        <div class="form-two" id="form-two">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
+                <div class="col-md-12 form-head text-center">
+                    <h4>Request a Guardant360 Kit</h4>
+                </div>
+                <div class="arrow-down"></div>
+            </div>
+            <div class="wrapper">
+                <form class="form">
+                    <div class="form-one" id="form-one">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
 
-                    <div class="row">
-                        <div class="col-md-12">
-                            <label class="info-text">Practice Contact</label>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" placeholder="First Name" class="form-control input-type " name="pcFname" required="true">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="First Name" class="form-control input-type " name="FirstName" required>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Last Name" class="form-control input-type " name="LastName" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="npi number" class="form-control input-type " id="npi" name="NPINumber" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Email for results delivery" class="form-control input-type " name="Email" id="sEmail">
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" placeholder="Last Name" class="form-control input-type " name="pcLname" required="true">
+                        <div class="row">
+                            <div class="cancer-type-container">
+                                <div class="col-md-12" id="cancer-type">
+                                    <h4 class="text-center btn-header">What types of cancer patients do you primarily treat?</h4>
+                                </div>
+
+                                <div class="row custom-button">
+                                    <div class="col-md-4">
+                                        <label class="btn-default form-control custom-label" for="360001_37368pi_360001_37368_507044_507044">
+                                            <input type="radio" name="typeOfCancer" id="360001_37368pi_360001_37368_507044_507044" value="Lung Cancer" onchange="">
+                                            <span class="info-text">Lung Cancer </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="btn-default form-control custom-label" for="360001_37368pi_360001_37368_507046_507046">
+                                            <input type="radio" name="typeOfCancer" id="360001_37368pi_360001_37368_507046_507046" value="BREAST CANCER" onchange="">
+                                            <span class="info-text">BREAST CANCER</span>
+                                        </label>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="btn-default form-control custom-label" for="360001_37368pi_360001_37368_507048_507048">
+                                            <input type="radio" name="typeOfCancer" id="360001_37368pi_360001_37368_507048_507048" value="COLORECTAL CANCER" onchange="">
+                                            <span class="info-text">COLORECTAL CANCER</span>
+                                        </label>
+
+                                    </div>
+                                </div>
+                                <div class="row custom-button">
+                                    <div class="col-md-4">
+                                        <label class="btn-default form-control custom-label" for="360001_37368pi_360001_37368_507050_507050">
+                                            <input type="radio" name="typeOfCancer" id="360001_37368pi_360001_37368_507050_507050" value="GI/GU CANCER" onchange="">
+                                            <span class="info-text">GI/GU CANCER</span>
+                                        </label>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="btn-default form-control custom-label" for="360001_37368pi_360001_37368_507052_507052">
+                                            <input type="radio" name="typeOfCancer" id="360001_37368pi_360001_37368_507052_507052" value="MELANOMA CANCER" onchange="">
+                                            <span class="info-text">MELANOMA CANCER</span>
+                                        </label>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="btn-default form-control custom-label" for="360001_37368pi_360001_37368_507054_507054">
+                                            <input type="radio" name="typeOfCancer" id="360001_37368pi_360001_37368_507054_507054" value="OTHER CANCER" onchange="">
+                                            <span class="info-text">OTHER CANCER</span>
+                                        </label>
+
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <input type="text" placeholder="Office Contact Email" class="form-control input-type " name="pcEmail" id="pcEmail" required="true">
-                            </div>
+
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <label class="info-text">Shipping Information</label>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <input type="text" placeholder="Practice name" class="form-control input-type " name="pcShipping" required="true">
+            </div>
+            <div class="form-two" id="form-two">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label class="info-text">Practice Contact</label>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" placeholder="First Name" class="form-control input-type " name="pcFname" required="true">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Last Name" class="form-control input-type " name="pcLname" required="true">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Office Contact Email" class="form-control input-type " name="pcEmail" id="pcEmail" required="true">
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <input type="text" placeholder="Address" class="form-control input-type " name="pcAddress" required="true">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label class="info-text">Shipping Information</label>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" placeholder="city" class="form-control input-type " name="pcCity" required="true">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Practice name" class="form-control input-type " name="pcShipping" required="true">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <input type="text" placeholder="state" class="form-control input-type " name="pcState" required>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Address" class="form-control input-type " name="pcAddress" required="true">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <input type="text" placeholder="zip code" class="form-control input-type " name="pcZip" required>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" placeholder="city" class="form-control input-type " name="pcCity" required="true">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <input type="text" placeholder="state" class="form-control input-type " name="pcState" required>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <input type="text" placeholder="zip code" class="form-control input-type " name="pcZip" required>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div style="position:absolute; left:-9999px; top: -9999px;">
-            <label for="pardot_extra_field">Comments</label>
-            <input type="text" id="pardot_extra_field" name="pardot_extra_field">
-        </div>
+            <div style="position:absolute; left:-9999px; top: -9999px;">
+                <label for="pardot_extra_field">Comments</label>
+                <input type="text" id="pardot_extra_field" name="pardot_extra_field">
+            </div>
 
-        <div class="form-three" id="form3">
-            <div class="row">
-                <i class="material-icons check-circle">&#xe5ca;</i>
-            </div>
-            <div class="row text-center">
-                <h4 class="success">Success!</h4>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-8 col-md-offset-2">
-                    <p class="success-content">A Guardant Health representative will be in contact shortly.
-                    </p>
-                    <p class="success-content-link"> Click below to download the Physician Portal App.</p>
+            <div class="form-three" id="form3">
+                <div class="row">
+                    <i class="material-icons check-circle">&#xe5ca;</i>
+                </div>
+                <div class="row text-center">
+                    <h4 class="success">Success!</h4>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <p class="success-content">A Guardant Health representative will be in contact shortly.
+                        </p>
+                        <p class="success-content-link"> Click below to download the Physician Portal App.</p>
+                    </div>
+                </div>
+                <div class="row text-center portal-app">
+                    <a href="https://itunes.apple.com/us/app/guardant-health-physician-and-provider-portal/id1137717305?mt=8" target="_blank">
+                        <img src="https://go.pardot.com/l/360001/2018-05-08/3rdfp/360001/23974/iTunesArtwork_2x.png" class="itune">
+                    </a>
+                    <a href="https://itunes.apple.com/us/app/guardant-health-physician-and-provider-portal/id1137717305?mt=8" target="_blank">
+                        <img src="https://go.pardot.com/l/360001/2018-05-08/3rdfr/360001/23976/download_app_store.png" class="app-store">
+                    </a>
                 </div>
             </div>
-            <div class="row text-center portal-app">
-                <a href="https://itunes.apple.com/us/app/guardant-health-physician-and-provider-portal/id1137717305?mt=8" target="_blank">
-                    <img src="https://go.pardot.com/l/360001/2018-05-08/3rdfp/360001/23974/iTunesArtwork_2x.png" class="itune">
-                </a>
-                <a href="https://itunes.apple.com/us/app/guardant-health-physician-and-provider-portal/id1137717305?mt=8" target="_blank">
-                    <img src="https://go.pardot.com/l/360001/2018-05-08/3rdfr/360001/23976/download_app_store.png" class="app-store">
-                </a>
-            </div>
-        </div>
 
-        <div class="form-four" id="form4">
-            <div class="row">
-                <i class="material-icons check-circle
+            <div class="form-four" id="form4">
+                <div class="row">
+                    <i class="material-icons check-circle
 ">&#xe5ca;</i>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-8 col-md-offset-2">
-                    <p class="success-content-body">
-                        <span class="bold">Thank you for requesting a Guardant360 Kit.</span>
-                          <br> A Genomic Specialist will contact you for a consultation.</p>
                 </div>
-            </div>
-
-        </div>
-
-        <div class="row" id="shift">
-            <div class="step-container">
-                <div class="stepwizard">
-                    <div class="stepwizard-row">
-                        <div class="stepwizard-step pull-left">
-                            <button type="button" class="btn btn-primary btn-circle" id="one">
-                                <span class="form-one">1 </span>
-                                <i class="material-icons form-two">&#xe5ca;</i>
-                            </button>
-
-                        </div>
-                        <div class="stepwizard-step pull-right">
-                            <button type="button" class="btn btn-default btn-circle validate" id="two">2</button>
-
-                        </div>
-
-                    </div>
-                    <hr/>
-
-                   
-                </div>
-            </div>
-
-        </div>
-        <div style="position:absolute; left:-9999px; top: -9999px;">
-            <label for="pardot_extra_field">Comments</label>
-            <input type="text" id="pardot_extra_field" name="pardot_extra_field">
-        </div>
-         
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 submit">
-                <div class="form-two">                
-                <button type="button" id="SubmitButton" class="btn-primary btn-submit form-control">SUBMIT</button>
-               </div>
-               <div class="form-one">
-               <div class="btn-next">
-                        <button type="button" id="next" class="btn-primary btn-submit form-control validate">NEXT</button>
+                <div class="row text-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <p class="success-content-body">
+                            <span class="bold">Thank you for requesting a Guardant360 Kit.</span>
+                            <br> A Genomic Specialist will contact you for a consultation.</p>
                     </div>
                 </div>
 
+            </div>
+
+            <div class="row" id="shift">
+                <div class="step-container">
+                    <div class="stepwizard">
+                        <div class="stepwizard-row">
+                            <div class="stepwizard-step pull-left">
+                                <button type="button" class="btn btn-primary btn-circle" id="one">
+                                    <span class="form-one">1 </span>
+                                    <i class="material-icons form-two">&#xe5ca;</i>
+                                </button>
+
+                            </div>
+                            <div class="stepwizard-step pull-right">
+                                <button type="button" class="btn btn-default btn-circle validate" id="two">2</button>
+
+                            </div>
+
+                        </div>
+                        <hr/>
+
+                    </div>
+                </div>
 
             </div>
-        </div>
-        </form>
+            <div style="position:absolute; left:-9999px; top: -9999px;">
+                <label for="pardot_extra_field">Comments</label>
+                <input type="text" id="pardot_extra_field" name="pardot_extra_field">
+            </div>
 
-    </div>
-    <a href="https://www.guardant360.com/" target="_blank">
-        <div class="container">
             <div class="row">
-                <div class="second-footer text-center">
-                    <div class="click-more">CLICK HERE TO LEARN MORE ABOUT </div>
-                    <img src="https://go.pardot.com/l/360001/2018-05-04/3r4dh/360001/23658/logo_1x.svg" class="text-center">
+                <div class="col-md-8 col-md-offset-2 submit">
+                    <div class="form-two">
+                        <button type="button" id="SubmitButton" class="btn-primary btn-submit form-control">SUBMIT</button>
+                    </div>
+                    <div class="form-one">
+                        <div class="btn-next">
+                            <button type="button" id="next" class="btn-primary btn-submit form-control validate">NEXT</button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+            </form>
+
         </div>
-    </a>
+        <a href="https://www.guardant360.com/" target="_blank">
+            <div class="container">
+                <div class="row">
+                    <div class="second-footer text-center">
+                        <div class="click-more">CLICK HERE TO LEARN MORE ABOUT </div>
+                        <img src="https://go.pardot.com/l/360001/2018-05-04/3r4dh/360001/23658/logo_1x.svg" class="text-center">
+                    </div>
+                </div>
+            </div>
+        </a>
     </div>
     <div class="container-fluid">
         <div class="row">
@@ -309,17 +307,48 @@
             </footer>
         </div>
     </div>
+
 </body>
-<style>
-    body{
-        display:none;
-    }
-    </style>
+
 <script>
-  $(function() {
-    
-        $("body").fadeIn(1000);        
-      
-});
- </script>
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    var player;
+
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('youtube-vid', {
+            videoId: '1w1DZqOgBQs',
+            playerVars: {
+                rel: 0
+            },
+            autoplay: 1,
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        event.target.playVideo();
+        event.target.setPlaybackQuality('hd1080');
+    }
+
+    function onPlayerStateChange(e) {
+        if (e.data === YT.PlayerState.ENDED) {
+            player.playVideo();
+        }
+
+    }
+</script>
+<script>
+    $(function() {
+
+        $("body").fadeIn(1000);
+
+    });
+</script>
+
 </html>
