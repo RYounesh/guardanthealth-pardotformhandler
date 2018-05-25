@@ -257,7 +257,7 @@ label {
     border-left: solid 5px transparent;
     border-right: solid 5px transparent;
 }
-.contact-container{
+.contact-container{ 
     width: 846px;
     top: 30px;
     padding: 0px 30px;
@@ -314,4 +314,7 @@ label {
     color: #ca1515;
     clear: both;
     margin-top: 5px 
+}
+#select-opt{
+    display: none;
 }

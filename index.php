@@ -8,6 +8,13 @@
     <title>Guardant360</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="identifier-url" content="https://guardanthealth.herokuapp.com/" />
+    <meta name="title" content="Guardant360" />
+    <meta name="description" content="A physician panel of Oncologists discuss their own experiences with the limitations of tissue and how an extensively validated liquid biopsy helps guide treatment selection" /> 
+    <meta name="keywords" content="Guardant360,LUNG CANCER,BREAST CANCER,COLORECTAL CANCER,GI/GU CANCER,MELANOMA CANCER,OTHER CANCER" /> 
+    <meta name="copyright" content="© 2018 Guardant Health, Inc. " />
+    <meta name="robots" content="All" />
+    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -27,7 +34,7 @@
     <div class="container-fluid">
         <header>
             <div class="row text-center">
-                <h3>The Limitations Of Tissue</h3>
+                <h3>The Limitations of Tissue Biopsies</h3>
             </div>
             <div class="header-body text-center">
                 <p class="header-content">A physician panel of Oncologists discuss their own experiences with the limitations of tissue and how an extensively validated liquid biopsy helps guide treatment selection.</p>
@@ -309,7 +316,11 @@
     </div>
 
 </body>
-
+<style>
+.ytp-watermark{
+    display:none !important;
+}
+</style>
 <script>
     var tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
@@ -321,9 +332,13 @@
         player = new YT.Player('youtube-vid', {
             videoId: '1w1DZqOgBQs',
             playerVars: {
-                rel: 0
-            },
-            autoplay: 1,
+                rel: 0, 
+                showinfo:0, 
+                autoplay:1,
+                modestbranding:0,                
+                controls:0
+                
+            }, 
             events: {
                 'onReady': onPlayerReady,
                 'onStateChange': onPlayerStateChange

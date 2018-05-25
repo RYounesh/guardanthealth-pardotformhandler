@@ -1,9 +1,23 @@
 $(document).ready(function() {
 
-    $('.custom-button .btn-default').click(function() {
+    $('.custom-button .btn-default').click(function() { 
         $('.custom-label').removeClass('active');
         $(this).addClass('active');
         $('.contact-fields').fadeIn();
+
+        if($(this).attr('id')=='physician'){
+            $('#select-opt').show(500); 
+            $("#txt-area").animate({ 
+                height: 236
+          }, 500);
+            
+        }else{
+            $('#select-opt').hide(500);  
+            $("#txt-area").animate({ 
+                height: 172
+          }, 500);
+        }
+
     });
 
     $('#SubmitButton').click(function() {
@@ -63,8 +77,8 @@ $(document).ready(function() {
     });
 
     $('.selectpicker').change(function() {
-        if ($(this).val() == "GUARDANT 360 KIT") {
-            window.location.replace("https://guardanthealth.herokuapp.com/");
+        if ($(this).val() == "REQUEST A GUARDANT360 KIT") {
+            window.location.replace("https://guardanthealth.herokuapp.com/landingWithoutVideo/");
         }
         $(this).removeClass("warning_red");
         $(this).closest("div").find('p').remove();

@@ -45,7 +45,7 @@
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label class="btn-default form-control custom-label" for="">
+                            <label class="btn-default form-control custom-label" for="" id="physician">
                                 <input type="radio" name="" id="" value="507044" onchange=""> Physician </label>
                         </div>
                     </div>
@@ -79,11 +79,11 @@
 
                         <div class="col-md-6">
 
-                            <div class="form-group select-opt">
-                                <select class="form-control input-type selectpicker">
+                            <div class="form-group select-opt" id="select-opt">
+                                <select class="form-control input-type selectpicker" id="inquiry-type">
                                     <option value="">INQUIRY TYPE<i class="fa fa-caret-down" aria-hidden="true"></i></option>
                                     <option value="OTHER">OTHER</option>
-                                    <option value="GUARDANT 360 KIT">GUARDANT 360 KIT</option>
+                                    <option value="REQUEST A GUARDANT360 KIT">REQUEST A GUARDANT360 KIT</option>
                                 </select>
                             </div>
                             <div class="form-group">
@@ -98,7 +98,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <textarea rows="11" cols="50" placeholder="Your inquiry" class="form-control input-type"></textarea>
+                                <textarea rows="11" cols="50" placeholder="Your inquiry" class="form-control input-type" id="txt-area"></textarea>
                             </div>
                         </div>
                     </div>

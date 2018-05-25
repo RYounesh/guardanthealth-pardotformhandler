@@ -8,6 +8,12 @@
     <title>Guardant360</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="identifier-url" content="https://guardanthealth.herokuapp.com/" />
+    <meta name="title" content="Guardant360" />
+    <meta name="description" content="A physician panel of Oncologists discuss their own experiences with the limitations of tissue and how an extensively validated liquid biopsy helps guide treatment selection" /> 
+    <meta name="keywords" content="Guardant360,LUNG CANCER,BREAST CANCER,COLORECTAL CANCER,GI/GU CANCER,MELANOMA CANCER,OTHER CANCER" /> 
+    <meta name="copyright" content="© 2018 Guardant Health, Inc. " />
+    <meta name="robots" content="All" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
