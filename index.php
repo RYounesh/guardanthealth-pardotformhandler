@@ -325,7 +325,6 @@
 <script src="cookie/cookieconsent.js"></script>
 
 <script> 
-
   (function (C, U) {
     var popupInst; 
     var cont_code;
@@ -336,8 +335,6 @@
 
     function draw(code) {
       var options = getOptions(code);
-     console.log(code);
-
       if (popupInst) {
         popupInst.clearStatus();
         popupInst.destroy();

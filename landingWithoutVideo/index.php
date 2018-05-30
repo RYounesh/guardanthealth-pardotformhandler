@@ -304,22 +304,17 @@
     }
     </style>
 	<script src="cookie/cookieconsent.js"></script>
-	<script> 
+<script> 
   (function (C, U) {
-
     var popupInst; 
     var cont_code;
-    $.getScript('http://www.geoplugin.net/javascript.gp', function() 
-    {
-        var country = geoplugin_countryName(); 
-        cont_code = geoplugin_countryCode() 
-        draw('DE');  
-    }); 
+    $.getJSON("https://freegeoip.net/json/", function(response) {
+        cont_code=response.country_code;
+    draw(cont_code);
+}, "jsonp"); 
 
     function draw(code) {
       var options = getOptions(code);
-      console.log(code);
-
       if (popupInst) {
         popupInst.clearStatus();
         popupInst.destroy();
