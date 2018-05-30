@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="css/gotham-rounded.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="cookie/cookieconsent.min.css" rel="stylesheet">
     <script type="text/javascript" src="app.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
@@ -321,6 +322,64 @@
     display:none !important;
 }
 </style>
+<script src="cookie/cookieconsent.js"></script>
+<script> 
+  (function (C, U) {
+
+    var popupInst; 
+    var cont_code;
+    $.getScript('http://www.geoplugin.net/javascript.gp', function() 
+    {
+        var country = geoplugin_countryName(); 
+        cont_code = geoplugin_countryCode() 
+        draw(cont_code);  
+    }); 
+
+    function draw(code) {
+      var options = getOptions(code); 
+
+      if (popupInst) {
+        popupInst.clearStatus();
+        popupInst.destroy();
+        popupInst = null;
+      }
+
+      cookieconsent.initialise(options, function (popup) {
+        popupInst = popup;
+        popupInst.autoOpen();
+      }, function (err) {
+        console.error(err)
+      });
+ 
+    }
+
+    function getOptions(code) {
+      return {
+        type: 'info',
+        regionalLaw: true,
+        palette: {
+          "popup":{"background":"#383b75f2","text":"#cfcfe8"},
+          "button":{"background":"#f1d600"}
+        },
+        law: { 
+          countryCode: code,
+        }
+      }
+    }
+
+    function getCountryDetails(code) { 
+      var law = new cookieconsent.Law({});
+      var countryOpts = law.get(code);
+
+      if (!countryOpts.hasLaw) {
+        return 'Has cookie law? no';
+      }
+
+    }
+
+  }(window.cookieconsent, window.cookieconsent_example_util));
+
+</script>
 <script>
     var tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
