@@ -374,7 +374,7 @@
         type: 'info',
         regionalLaw: true,
         palette: {
-          "popup":{"background":"#383b75f2","text":"#cfcfe8"},
+          "popup":{"text":"#ffffff"},
           "button":{"background":"#f1d600"}
         },
         law: { 
