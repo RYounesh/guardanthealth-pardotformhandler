@@ -8,10 +8,10 @@
     <title>Guardant360</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="identifier-url" content="https://guardanthealth.herokuapp.com/" />
-    <meta name="title" content="Guardant360" />
+	<meta name="identifier-url" content="https://guardant360.com/liquid-biopsy-panel/limitations-of-tissue" />
+    <meta name="title" content="Oncologist Panel | The Limitations of Tissue Biopsies" />
     <meta name="description" content="A physician panel of Oncologists discuss their own experiences with the limitations of tissue and how an extensively validated liquid biopsy helps guide treatment selection" /> 
-    <meta name="keywords" content="Guardant360,LUNG CANCER,BREAST CANCER,COLORECTAL CANCER,GI/GU CANCER,MELANOMA CANCER,OTHER CANCER" /> 
+    <meta name="keywords" content="Liquid biopsy, treatment selection, Oncology Panel, Panel of Oncologists, physician panel, NSCLC, Lung Cancer, Guardant360, Guardant Health" /> 
     <meta name="copyright" content="© 2018 Guardant Health, Inc. " />
     <meta name="robots" content="All" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -23,16 +23,54 @@
 	<link href="cookie/cookieconsent.min.css" rel="stylesheet">
     <script type="text/javascript" src="app.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+	
+	<!-- Global site tag (gtag.js) - Google AdWords: 818573828 --> 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-818573828"></script> 
+		<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-818573828'); </script>
+
+	<!-- Event snippet for Request a G360 Kit conversion page --> 
+		<script> gtag('event', 'conversion', {'send_to': 'AW-818573828/kBnTCLqxqIMBEITkqYYD'}); </script>
+		
+	<!-- Facebook Pixel Code -->
+		<script>
+			!function(f,b,e,v,n,t,s)
+			{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+			n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+			if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+			n.queue=[];t=b.createElement(e);t.async=!0;
+			t.src=v;s=b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t,s)}(window,document,'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+			 fbq('init', '332627523893251'); 
+			fbq('track', 'PageView');
+			</script>
+			<noscript>
+			 <img height="1" width="1" 
+			src="https://www.facebook.com/tr?id=332627523893251&ev=PageView
+			&noscript=1"/>
+		</noscript>		
+	<!-- End Facebook Pixel Code -->
+	<!-- Twitter single-event website tag code -->
+		<script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+		<script type="text/javascript">twttr.conversion.trackPid('nzl6q', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
+		<noscript>
+		<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=nzl6q&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+		<img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=nzl6q&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+		</noscript>
+	<!-- End Twitter single-event website tag code -->
  
 </head>
+
+<script type="text/javascript"> _linkedin_data_partner_id = "355780"; </script>
+<script type="text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script> 
+<noscript> <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=355780&fmt=gif" /> </noscript>
+
 <body class="req-body"> 
     <div class="container-fluid">
         <header>
             <div class="row text-center request-head">
                 <h3>Request a <img src="guardant360.PNG"> Kit</h3>
-            </div>
-             
-
+            </div>	        
         </header>
     </div>
    
@@ -303,7 +341,8 @@
         display:none;
     }
     </style>
-	<script src="cookie/cookieconsent.js"></script>
+	
+ <script src="cookie/cookieconsent.js"></script>
 <script> 
   (function (C, U) {
     var popupInst; 

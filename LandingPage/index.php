@@ -8,10 +8,10 @@
     <title>Guardant360</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="identifier-url" content="https://guardanthealth.herokuapp.com/" />
-    <meta name="title" content="Guardant360" />
+    <meta name="identifier-url" content="https://guardant360.com/liquid-biopsy-panel/limitations-of-tissue" />
+    <meta name="title" content="Oncologist Panel | The Limitations of Tissue Biopsies" />
     <meta name="description" content="A physician panel of Oncologists discuss their own experiences with the limitations of tissue and how an extensively validated liquid biopsy helps guide treatment selection" /> 
-    <meta name="keywords" content="Guardant360,LUNG CANCER,BREAST CANCER,COLORECTAL CANCER,GI/GU CANCER,MELANOMA CANCER,OTHER CANCER" /> 
+    <meta name="keywords" content="Liquid biopsy, treatment selection, Oncology Panel, Panel of Oncologists, physician panel, NSCLC, Lung Cancer, Guardant360, Guardant Health" /> 
     <meta name="copyright" content="© 2018 Guardant Health, Inc. " />
     <meta name="robots" content="All" />
     
@@ -29,9 +29,49 @@
             display: none;
         }
     </style>
-</head>
+	<!-- Global site tag (gtag.js) - Google AdWords: 818573828 --> 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-818573828"></script> 
+		<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-818573828'); </script>
 
+	<!-- Event snippet for Request a G360 Kit conversion page --> 
+		<script> gtag('event', 'conversion', {'send_to': 'AW-818573828/kBnTCLqxqIMBEITkqYYD'}); </script>
+		
+	<!-- Facebook Pixel Code -->
+			<script>
+			!function(f,b,e,v,n,t,s)
+			{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+			n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+			if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	    	n.queue=[];t=b.createElement(e);t.async=!0;
+			t.src=v;s=b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t,s)}(window,document,'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+			 fbq('init', '332627523893251'); 
+			fbq('track', 'PageView');
+			</script>
+			<noscript>
+			 <img height="1" width="1" 
+			src="https://www.facebook.com/tr?id=332627523893251&ev=PageView
+			&noscript=1"/>
+			</noscript>
+	<!-- End Facebook Pixel Code -->
+	<!-- Twitter universal website tag code -->
+		<script>
+		!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+		},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+		a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+		// Insert Twitter Pixel ID and Standard Event data below
+		twq('init','nzl6m');
+		twq('track','PageView');
+		</script>
+    <!-- End Twitter universal website tag code -->
+			
+</head>
+<script type="text/javascript"> _linkedin_data_partner_id = "355780"; </script>
+<script type="text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script> 
+<noscript> <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=355780&fmt=gif" /> </noscript>
 <body>
+
     <div class="container-fluid">
         <header>
             <div class="row text-center">
@@ -40,7 +80,6 @@
             <div class="header-body text-center">
                 <p class="header-content">A physician panel of Oncologists discuss their own experiences with the limitations of tissue and how an extensively validated liquid biopsy helps guide treatment selection.</p>
             </div>
-
         </header>
     </div>
 
@@ -323,7 +362,6 @@
 }
 </style>
 <script src="cookie/cookieconsent.js"></script>
-
 <script> 
   (function (C, U) {
     var popupInst; 
