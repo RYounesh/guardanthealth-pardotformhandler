@@ -324,17 +324,49 @@
     .cc-btn {
         white-space: normal
     }
+	.cc-window:after {
+    content: "" !important;
+    position: absolute !important;
+    left: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+    background-color: #0088d2 !important;
+    top: 10px !important;
+    z-index: -1;
+    transform: skewY(-1.6deg);
+	-webkit-transform: skewy(-1.6deg);
+   -moz-transform: skewy(-1.6deg);
+    -ms-transform: skewy(-1.6deg);
+     -o-transform: skewy(-1.6deg);
+        transform: skewy(-1.6deg);
+}
 	.cc-window.cc-banner {
     padding: 2em 1.6em;
-	background-color: #0088d2 !important;
+	
 	}
 }
 
 @media screen and (max-width:414px) and (orientation:portrait),
 screen and (max-width:736px) and (orientation:landscape) {
+	.cc-window:after {
+    content: "" !important;
+    position: absolute !important;
+    left: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+    background-color: #0088d2 !important;
+    top: 10px !important;
+    z-index: -1;
+    transform: skewY(-1.6deg);
+	-webkit-transform: skewy(-1.6deg);
+   -moz-transform: skewy(-1.6deg);
+    -ms-transform: skewy(-1.6deg);
+     -o-transform: skewy(-1.6deg);
+        transform: skewy(-1.6deg);
+}
+	
 	.cc-window.cc-banner {
-    padding: 2em 1.6em;
-	background-color: #0088d2 !important;
+    padding: 2em 1.6em; 
 	}
     .cc-window.cc-top {
         top: 0
