@@ -113,15 +113,6 @@
     background-color: #0088d2 !important;
     top: 10px !important;
     z-index: -1;
-    transform: skewY(-1.6deg);
-	-webkit-transform: skewy(-1.6deg);
-   -moz-transform: skewy(-1.6deg);
-    -ms-transform: skewy(-1.6deg);
-     -o-transform: skewy(-1.6deg);
-        transform: skewy(-1.6deg);
-}
-.cc-window.cc-banner::after {
-    top: 10px;
     transform: skewY(-0.8deg);
 	-webkit-transform: skewy(-0.8deg);
    -moz-transform: skewy(-0.8deg);
@@ -129,6 +120,7 @@
      -o-transform: skewy(-0.8deg);
         transform: skewy(-0.8deg);
 }
+ 
 .cc-window.cc-banner:after {
     content: "" !important;
     position: absolute !important;
@@ -138,12 +130,12 @@
     background-color: #0088d2 !important;
     top: 10px !important;
     z-index: -1;
-    transform: skewY(-1.6deg);
-	-webkit-transform: skewy(-1.6deg);
-   -moz-transform: skewy(-1.6deg);
-    -ms-transform: skewy(-1.6deg);
-     -o-transform: skewy(-1.6deg);
-        transform: skewy(-1.6deg);
+    transform: skewY(-0.8deg);
+	-webkit-transform: skewy(-0.8deg);
+   -moz-transform: skewy(-0.8deg);
+    -ms-transform: skewy(-0.8deg);
+     -o-transform: skewy(-0.8deg);
+        transform: skewy(-0.8deg);
 }
  
 .cc-revoke {
@@ -332,13 +324,13 @@
     width: 100% !important;
     background-color: #0088d2 !important;
     top: 10px !important;
-    z-index: -1;
-    transform: skewY(-1.6deg);
-	-webkit-transform: skewy(-1.6deg);
-   -moz-transform: skewy(-1.6deg);
-    -ms-transform: skewy(-1.6deg);
-     -o-transform: skewy(-1.6deg);
-        transform: skewy(-1.6deg);
+    z-index: -1; 
+    transform: skewY(-0.8deg);
+	-webkit-transform: skewy(-0.8deg);
+   -moz-transform: skewy(-0.8deg);
+    -ms-transform: skewy(-0.8deg);
+     -o-transform: skewy(-0.8deg);
+        transform: skewy(-0.8deg);
 }
 	.cc-window.cc-banner {
     padding: 2em 1.6em;
@@ -357,12 +349,12 @@ screen and (max-width:736px) and (orientation:landscape) {
     background-color: #0088d2 !important;
     top: 10px !important;
     z-index: -1;
-    transform: skewY(-1.6deg);
-	-webkit-transform: skewy(-1.6deg);
-   -moz-transform: skewy(-1.6deg);
-    -ms-transform: skewy(-1.6deg);
-     -o-transform: skewy(-1.6deg);
-        transform: skewy(-1.6deg);
+    transform: skewY(-0.8deg);
+	-webkit-transform: skewy(-0.8deg);
+   -moz-transform: skewy(-0.8deg);
+    -ms-transform: skewy(-0.8deg);
+     -o-transform: skewy(-0.8deg);
+        transform: skewy(-0.8deg);
 }
 	
 	.cc-window.cc-banner {
