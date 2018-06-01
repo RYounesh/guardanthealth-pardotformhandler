@@ -326,6 +326,7 @@
     }
 	.cc-window.cc-banner {
     padding: 2em 1.6em;
+	background-color: #0088d2 !important;
 	}
 }
 
@@ -333,6 +334,7 @@
 screen and (max-width:736px) and (orientation:landscape) {
 	.cc-window.cc-banner {
     padding: 2em 1.6em;
+	background-color: #0088d2 !important;
 	}
     .cc-window.cc-top {
         top: 0
