@@ -375,7 +375,7 @@
         regionalLaw: true,
         palette: {
           "popup":{"text":"#ffffff"},
-          "button":{"background":"#f1d600"}
+          "button":{"background":"#346094"}
         },
         law: { 
           countryCode: code,

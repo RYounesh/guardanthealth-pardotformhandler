@@ -52,18 +52,7 @@
 .cc-compliance{
 	position:relative;
 }
-.cc-btn.cc-dismiss::after {
-    content: '';
-    display: block;
-    height: 100%;
-    width: 57px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: transparent no-repeat center center;
-    background-size: 14px 20px;
-    background-image: url('arrow.svg');
-}
+ 
 .cc-btn.cc-dismiss {
     cursor: pointer;
     display: block;
@@ -75,10 +64,10 @@
     font-size: 14px;
     letter-spacing: 0.58px;
     line-height: 1;
-    font-weight: 700;
-    font-style: italic;
-    background: #89d329 no-repeat right top;
-    background-image: url('btn-bg.svg');
+    font-weight: 700; 
+    background: #346094 no-repeat right top;
+    background-image: url(btn-bg.png);
+    background-position: right -190px center;
     -webkit-transition: background-color 0.2s ease,color 0.2s ease;
     -moz-transition: background-color 0.2s ease,color 0.2s ease;
     -ms-transition: background-color 0.2s ease,color 0.2s ease;
