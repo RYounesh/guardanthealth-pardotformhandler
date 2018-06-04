@@ -205,7 +205,7 @@
       // each item defines the inner text for the element that it references
       content: {
         header: 'Cookies used on the website!',
-        message: 'This website uses cookies to help us give you the best experience when you visit. By using this website you consent to our use of these cookies.  Please review our updated <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="http://www.guardanthealth.com/privacy-policy/" rel="noopener noreferrer nofollow" target="_blank">privacy notice</a>.',
+        message: 'This website uses cookies to help us give you the best experience when you visit. By using this website you consent to our use of these cookies.  Please review our updated <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="http://www.guardanthealth.com/notice-of-privacy-practices/" rel="noopener noreferrer nofollow" target="_blank">privacy notice</a>.',
         dismiss: 'CLOSE <i class="material-icons" style="opacity: 0.6;font-size: 25px;position: absolute;top: 12px;right: 20px; color:#ffffff;">close</i>',
         allow: 'Allow cookies',
         deny: 'Decline', 
