@@ -31,6 +31,7 @@ $(document).ready(function() {
                 m = document.getElementsByName("pcCity")[0].value,
                 c = document.getElementsByName("pcState")[0].value,
                 p = document.getElementsByName("pcZip")[0].value,
+				allfields = "this is a test",
                 v = $('input[name="typeOfCancer"]:checked').val(),
                 u = {
                     Email: a,
@@ -45,7 +46,9 @@ $(document).ready(function() {
                     City: m,
                     State: c,
                     Zip: p,
-                    TypeOfCancer: v
+                    TypeOfCancer: v,
+					RequestaKitContactDetails = allfields
+					
                 },
                 f = $.param(u);
             $.ajax({
