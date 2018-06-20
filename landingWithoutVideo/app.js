@@ -32,7 +32,7 @@ $(document).ready(function() {
                 c = document.getElementsByName("pcState")[0].value,
                 p = document.getElementsByName("pcZip")[0].value,
                 v = $('input[name="typeOfCancer"]:checked').val(),
-				xx = e+','+s+','+i,
+				xx = "testing"
                 u = {
                     Email: a,
                     FirstName: e,
