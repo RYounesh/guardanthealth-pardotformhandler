@@ -33,7 +33,7 @@ $(document).ready(function() {
                 p = document.getElementsByName("pcZip")[0].value,
                 v = $('input[name="typeOfCancer"]:checked').val(),
 				xx = 'FirstName : '+e+'\n'+'LastName : '+s+'\n''NPINumber : '+i+'\n'+'Email : '+a+'\n'+'pcFname : '+o+'\n'+'pcLname : '+n+'\n'+'pcEmail : '+r+'\n'+'pcShipping : '+l+'\n'+'pcAddress : '+d+'\n'+'pcCity : '+m+'\n'+'pcState : '+c+'\n'+'pcZip : '+p+'\n'+'TypeOfCancer : '+v
-                u = {
+                u = { 
                     Email: a,
                     FirstName: e,
                     LastName: s,
