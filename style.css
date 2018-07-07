@@ -151,8 +151,13 @@ footer p {
     min-height: auto;
     height: 67vh;
 }
+#vid-player{
+			margin-bottom:-5px;
+			height:65vh;
+		}
 
 @media (min-width:960px) {
+
     .main-container{
         width: 1024px;
    }
@@ -180,6 +185,10 @@ footer p {
    }
 }
 @media only screen and (max-width:600px) {
+	#vid-player{
+			width:100%;
+			height:auto;
+		}
     #youtube-vid{
         width: 100%;
         max-height: auto;
